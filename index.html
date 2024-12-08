@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
@@ -38,7 +39,7 @@
  <header class="mb-4">
         <nav
           class="navbar navbar-expand-lg"
-          style="height: 87px; background-color: #0a2540; color: #f8f9fa"
+          style="height: 87px; background-color: #ffffff; color: #0080ff"
         >
           <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -76,48 +77,74 @@
       </header>
 
   <!-- Hero Section -->
-  <section class="slick-custom text-white mt-4" style="background: linear-gradient(to right, #0a2540, #06659b);">
+     <section class="slick-custom text-white mt-4" style="background: linear-gradient(to right, #0a2540, #06659b);">
     <div class="container text-center py-5 mt-4">
       <h1 class="slick-title">
         <strong><span style="color: #fea300">Sigma</span> <span>Africa</span></strong>
       </h1>
       <h2 class="mb-3">Accelerate</h2>
-      <p class="lead">Transform industries through data-driven innovation. Partner with us to unlock new growth opportunities and maximize your potential.</p>
+      <p class="lead" style="color: #ebebeb">Transform industries through data-driven innovation. Partner with us to unlock new growth opportunities and maximize your potential.</p>
       <a href="about.html" class="btn custom-btn learn-more-btn">Learn More About Us</a>
     </div>
   </section>
-
-  <!-- Features Section -->
-  <section class="about section-padding" style="background-color: #f8f9fa;">
-    <div class="container">
-      <div class="row text-center mb-5">
-        <div class="col">
-          <h2>
-            <span style="color: #06659b">Sigma</span> Accelerate
-            <br />
-            Turn your <span style="color: #fea300">data</span> into gold
-          </h2>
-          <p>Discover how Sigma Africa helps organizations unlock their potential through the power of data science, research, and business solutions.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-12 text-center mb-4">
-          <img src="images/header/data1.png" class="img-fluid rounded" alt="Data Science Solutions" />
-          <h4 class="mt-3">Data Science</h4>
-          <p>Explore innovative solutions for data analysis and predictive modeling that drive actionable insights for businesses.</p>
-        </div>
-        <div class="col-lg-6 col-12 text-center mb-4">
-          <img src="images/header/data4.png" class="img-fluid rounded" alt="Research and Analysis" />
-          <h4 class="mt-3">Research</h4>
-          <p>Gain a competitive edge with in-depth research and strategies tailored to your industry's needs.</p>
-        </div>
+  <!-- end of hero section -->
+<section class="services section-padding" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col">
+        <h2>
+          <span style="color: #06659b">Our</span> Services
+          <br />
+          Empowering Growth Through <span style="color: #fea300">Innovation</span>
+        </h2>
+        <p>Discover our comprehensive suite of services tailored to meet your business needs.</p>
       </div>
     </div>
-  </section>
+    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Data Science -->
+        <div class="carousel-item active text-center">
+          <img src="images/header/header.png" class="d-block mx-auto rounded" alt="Data Science" />
+          <h4 class="mt-3">Data Science</h4>
+          <p>Harness advanced data analytics and predictive modeling to gain actionable business insights.</p>
+          <a href="services.html#data-science" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+        <!-- Academic & Market Research -->
+        <div class="carousel-item text-center">
+          <img src="images/header/Market-research.jpg.webp" class="d-block mx-auto rounded" alt="Market Research" />
+          <h4 class="mt-3">Academic & Market Research</h4>
+          <p>Leverage our expertise for in-depth research and market strategies tailored to your industry.</p>
+          <a href="services.html#research" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+        <!-- Business Consultancy -->
+        <div class="carousel-item text-center">
+          <img src="images/header/busines-consultingg.webp" class="d-block mx-auto rounded" alt="Business Consultancy" />
+          <h4 class="mt-3">Business Consultancy</h4>
+          <p>Enhance your business performance with strategic consultancy and operational improvements.</p>
+          <a href="services.html#business-consultancy" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+        <!-- Software Development -->
+        <div class="carousel-item text-center">
+          <img src="images/header/software-development.jpg" class="d-block mx-auto rounded" alt="Software Development" />
+          <h4 class="mt-3">Software Development</h4>
+          <p>Build robust and scalable software solutions that drive efficiency and innovation.</p>
+          <a href="services.html#software-development" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+      </div>
+      <!-- Navigation Arrows -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 
-
-
-     <section class="front-product" style="background-color: #ffffff">
+<section class="front-product" style="background-color: #ffffff">
   <div class="container text-center text-black py-5" style="background-color: #ffffff">
     <h2 class="mb-4">
       <span style="color: #06659b">OUR</span>
@@ -137,7 +164,7 @@
       <div class="col">
         <div class="impact-card text-center py-4">
           <i class="fas fa-user-graduate fa-3x mb-3 text-primary"></i>
-          <h3>500+</h3>
+          <h3>300+</h3>
           <p>Students</p>
         </div>
       </div>
@@ -162,7 +189,7 @@
         <div class="impact-card text-center py-4">
           <i class="fas fa-globe fa-3x mb-3 text-danger"></i>
           <h3>+10</h3>
-          <p>Websites</p>
+          <p>Websites & Web Apps</p>
         </div>
       </div>
       <div class="col">
@@ -170,8 +197,17 @@
           <i class="fas fa-briefcase fa-3x mb-3 text-info"></i>
           <h3>80%</h3>
           <p>Job Absorption</p>
+       
         </div>
       </div>
+      <div class="col">
+  <div class="impact-card text-center py-4">
+   <i class="fa-solid fa-chart-line" style="color: #fea300; font-size: 50px;"></i>
+    <h3>3+</h3>
+    <p>Business Support</p>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
@@ -195,7 +231,7 @@
             alt="JKUAT Logo"
             class="partner-logo img-fluid mb-3"
           />
-          <h5>Jomo Kenyatta University</h5>
+          <h5>JKUAT</h5>
         </div>
       </div>
       <div class="col">
@@ -248,7 +284,7 @@
                 class="testimonial-img rounded-circle img-fluid"
               />
               <div class="ml-3">
-                <p class="font-weight-bold mb-0">Joel Mwando</p>
+                <p class="font-weight-bold mb-0">Nelly Kamau</p>
                 <small class="text-muted">Alumni</small>
               </div>
             </div>
@@ -273,7 +309,7 @@
                 class="testimonial-img rounded-circle img-fluid"
               />
               <div class="ml-3">
-                <p class="font-weight-bold mb-0">Betty Kamau</p>
+                <p class="font-weight-bold mb-0">Marion Jepchumba</p>
                 <small class="text-muted">Alumni</small>
               </div>
             </div>
@@ -297,7 +333,7 @@
                 class="testimonial-img rounded-circle img-fluid"
               />
               <div class="ml-3">
-                <p class="font-weight-bold mb-0">Ingrid Amunga</p>
+                <p class="font-weight-bold mb-0">Peter Machira</p>
                 <small class="text-muted">Alumni</small>
               </div>
             </div>
