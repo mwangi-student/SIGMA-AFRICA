@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="./images/header/sigmaicon.png" />
+
+    <title>SIGMA AFRICA</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <link href="css/sigma.css" rel="stylesheet" />
+  </head>
+
+<body>
+ 
+  <!-- Header Section -->
+ <header class="mb-4">
+        <nav
+          class="navbar navbar-expand-lg"
+          style="height: 87px; background-color: #ffffff; color: #0080ff"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="./images/header/sigma-logo.png"
+                alt="Sigma's logo"
+                style="height: 30pxx"
+              />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="services.html">Services</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="community.html">Community</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " href="./blogs.html">Blogs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+  <!-- Hero Section -->
+     <section class="slick-custom text-white mt-4" style="background: linear-gradient(to right, #0a2540, #06659b);">
+    <div class="container text-center py-5 mt-4">
+      <h1 class="slick-title">
+        <strong><span style="color: #fea300">Sigma</span> <span>Africa</span></strong>
+      </h1>
+      <h2 class="mb-3">Accelerate</h2>
+      <p class="lead" style="color: #ebebeb">Transform industries through data-driven innovation. Partner with us to unlock new growth opportunities and maximize your potential.</p>
+      <a href="about.html" class="btn custom-btn learn-more-btn">Learn More About Us</a>
+    </div>
+  </section>
+<!-- Our Services Section -->
+<section class="our-services-section py-5">
+  <div class="container">
+    <h1 class="text-primary mb-5 text-center">Our Services</h1>
+
+    <!-- Data Science Section -->
+    <div class="row align-items-center service-row mb-5">
+      <div class="col-md-6">
+        <img
+          src="./images/header/datascience.png"
+          alt="Data Science"
+          class="img-fluid rounded service-image"
+        />
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary mb-3">Data Science</h2>
+        <p>
+          Transform your business with data-driven strategies. We provide
+          cutting-edge data science solutions, predictive analytics, and insights that drive growth.
+        </p>
+        <button
+          class="btn btn-primary read-more-btn"
+          onclick="showServiceDetails('data-science')"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <!-- Academic and Market Research Section -->
+    <div class="row align-items-center service-row flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img
+          src="./images/header/Market-research.jpg.webp"
+          alt="Academic and Market Research"
+          class="img-fluid rounded service-image"
+        />
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary mb-3">Academic and Market Research</h2>
+        <p class="service">
+          We offer comprehensive research services to meet academic and market demands. Our expert team ensures reliable and actionable insights.
+        </p>
+        <button
+          class="btn btn-primary read-more-btn"
+          onclick="showServiceDetails('academic-research')"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <!-- Business Consultancy Section -->
+    <div class="row align-items-center service-row mb-5">
+      <div class="col-md-6">
+        <img
+          src="./images/header/busines-consultingg.webp"
+          alt="Business Consultancy"
+          class="img-fluid rounded service-image"
+        />
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary mb-3">Business Consultancy</h2>
+        <p class="service">
+          Elevate your business with our tailored consultancy services. We focus on operational efficiency, strategic planning, and sustainable growth.
+        </p>
+        <button
+          class="btn btn-primary read-more-btn"
+          onclick="showServiceDetails('business-consultancy')"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <!-- Software Development Section -->
+    <div class="row align-items-center service-row flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img
+          src="./images/header/software-development.jpg"
+          alt="Software Development"
+          class="img-fluid rounded service-image"
+        />
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary mb-3">Software Development</h2>
+        <p class="service">
+          Develop custom software solutions to streamline your business operations and enhance productivity. We bring your ideas to life with precision.
+        </p>
+        <button
+          class="btn btn-primary read-more-btn"
+          onclick="showServiceDetails('software-development')"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div id="serviceModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="" class="img-fluid mb-3" />
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+
+
+
+    </main>
+
+    <footer
+      class="site-footer text-white pt-5"
+      style="background-color: #06659b"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Newsletter Section -->
+          <div class="col-lg-4 mb-4">
+            <h5 class="font-weight-bold">Latest News</h5>
+            <p>Get latest news delivered directly to your inbox.</p>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email address"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Section -->
+          <div class="col-lg-4 mb-4">
+            <h5 class="font-weight-bold">
+              Sigma <span style="color: #fea300">Africa</span> Accelerate
+            </h5>
+            <p>
+              We are a data analysis company based in Nairobi, Kenya. We
+              specialize in data science, business consultancy, academic and
+              market research, and web development. We are the missing piece
+              that will give your business that competitive edge.
+            </p>
+          </div>
+
+          <!-- Useful Links Section -->
+          <div class="col-lg-2 mb-4">
+            <h5 class="font-weight-bold">Useful Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="/index.html" class="text-white">Home</a></li>
+              <li><a href="/about.html" class="text-white">About Us</a></li>
+              <li>
+                <a href="./community.html" class="text-white">Community</a>
+              </li>
+              <li><a href="./blogs.html" class="text-white">Blogs</a></li>
+              <li><a href="/contact.html" class="text-white">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Section -->
+          <div class="col-lg-2 mb-4">
+            <h5 class="font-weight-bold">Our Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Data Science</a></li>
+              <li>
+                <a href="#" class="text-white">Academic And Market Research</a>
+              </li>
+              <li><a href="#" class="text-white">Business Consultancy</a></li>
+              <li><a href="#" class="text-white">Software Development</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="font-weight-bold">Contact Us</h5>
+            <p>
+              <i class="fas fa-phone-alt" style="color: #fea300"></i
+              >&nbsp;+254746910922
+            </p>
+            <p>
+              <i class="fas fa-envelope" style="color: #fea300"></i
+              >&nbsp;sigmanalytics09@gmail.com
+            </p>
+            <p><i class="fas fa-globe mr-2"></i>&nbsp;www.sigma.io</p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center py-3">
+          <small
+            >©2024 Sigma
+            <span style="color: #fea300">Africa</span> Accelerate</small
+          >
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+ <script>
+  // Get modal elements
+  const modal = document.getElementById("serviceModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalImage = document.getElementById("modalImage");
+  const modalDescription = document.getElementById("modalDescription");
+  const closeModal = document.querySelector(".close");
+
+  // Service data
+  const serviceDetails = {
+    "data-science": {
+      title: "Data Science",
+      image: "./images/header/datascience.png",
+      description: "Transform your business with data-driven strategies. We provide cutting-edge data science solutions, predictive analytics, and insights that drive growth."
+    },
+    "academic-research": {
+      title: "Academic and Market Research",
+      image: "./images/header/Market-research.jpg.webp",
+      description: "We offer comprehensive research services to meet academic and market demands. Our expert team ensures reliable and actionable insights."
+    },
+    "business-consultancy": {
+      title: "Business Consultancy",
+      image: "./images/header/busines-consultingg.webp",
+      description: "Elevate your business with our tailored consultancy services. We focus on operational efficiency, strategic planning, and sustainable growth."
+    },
+    "software-development": {
+      title: "Software Development",
+      image: "./images/header/software-development.jpg",
+      description: "Develop custom software solutions to streamline your business operations and enhance productivity. We bring your ideas to life with precision."
+    }
+  };
+
+  // Show modal with service details
+  function showServiceDetails(serviceId) {
+    const service = serviceDetails[serviceId];
+    modalTitle.textContent = service.title;
+    modalImage.src = service.image;
+    modalDescription.textContent = service.description;
+    modal.style.display = "block";
+  }
+
+  // Close modal
+  closeModal.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
+ </script>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
