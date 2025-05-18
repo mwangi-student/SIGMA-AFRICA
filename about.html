@@ -1,571 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="icon" href="./images/header/sigmaicon.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about Sigma Africa, a Nairobi-based data analysis company specializing in data science, consultancy, research, and software development.">
+  <meta name="author" content="Sigma Africa">
+  <link rel="icon" href="./images/header/sigmaicon.png">
+  <title>Sigma Africa - About Us</title>
 
-    <title>SIGMA AFRICA</title>
+  <!-- CSS FILES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/sigma.css">
+</head>
 
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/slick.css" />
-
-    <link href="css/sigma.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <section class="preloader">
-      <div class="spinner">
-        <span class="sk-inner-circle"></span>
-      </div>
-    </section>
-
-    <main>
- <header class="mb-4">
-        <nav
-          class="navbar navbar-expand-lg"
-          style="height: 87px; background-color: #ffffff; color: #f8f9fa"
-        >
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
               <img
                 src="./images/header/sigma-logo.png"
                 alt="Sigma's logo"
                 style="height: 30pxx"
               />
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                <li class="nav-item">
-                  <a class="nav-link active" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="community.html">Community</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./blogs.html">Blogs</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
- <!-- Hero Section -->
-     <section class="slick-custom text-white mt-4" style="background: linear-gradient(to right, #0a2540, #075481);">
-    <div class="container text-center py-5 mt-4">
-      <h1 class="slick-title">
-        <strong><span style="color: #fea300">Sigma</span> <span style="color: #0b76b4">Africa</span></strong>
+  <!-- Hero Section -->
+  <section class="hero py-5 text-white" style="background: linear-gradient(90deg, #0a2540, #06659b);">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold">
+        <span style="color: #fea300;">Sigma</span> <span style="color: #fff;">Africa</span>
       </h1>
-      <h2 class="mb-3" style="color: #000000">Accelerate</h2>
-      <p class="lead" style="color: #ebebeb">Empowering industries to stay ahead of the curve by harnessing the power of data and innovative solutions. We integrate cutting-edge technologies and data-driven strategies to transform operations, optimize decision-making, and drive sustainable growth. Our focus is on unlocking untapped potential, enhancing efficiency, and creating competitive advantages that shape the future of business. With our expertise in analytics and digital transformation, we partner with organizations to lead their industries through dynamic and informed innovation.</p>
+      <h2 class="h3 mb-4">Accelerate Your Future</h2>
+      <p class="lead mb-5 text-light" style="max-width: 800px; margin: 0 auto;">
+        Empowering industries with data-driven innovation and cutting-edge solutions. We transform operations, optimize
+        decisions, and drive sustainable growth through analytics and digital transformation.
+      </p>
     </div>
   </section>
-  <!-- end of hero section -->
 
+  <!-- Who We Are Section -->
+  <section class="who-we-are py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="./images/header/teamsigma.png" alt="Sigma Africa Team" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="display-6 fw-bold mb-4">Who <span style="color: #06659b;">We</span> Are</h2>
+          <p class="mb-4">
+            Sigma Africa is a Nairobi-based data analysis company specializing in data science, business consultancy,
+            academic and market research, and software development. We provide the competitive edge your business needs.
+          </p>
+          <p class="mb-4">
+            We empower businesses and individuals to harness their data for success. Our expertise in analytics and
+            market research accelerates your path to a data-driven future.
+          </p>
+          <p class="mb-4">
+            At unbeatable prices, we deliver custom software solutions to equip your business with the tools to thrive
+            in today’s competitive landscape.
+          </p>
+          <a href="datascience.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-      <section class="who-we-are-section py-5">
-        <div class="container">
-          <div class="row align-items-center justify-content-space-around">
-            <div class="col-md-6">
-              <img
-                src="./images/header/teamsigma.png"
-                alt="Team"
-                class="img-fluid rounded"
-              />
+  <!-- Team Section -->
+  <section class="team py-5 bg-light">
+    <div class="container">
+      <h2 class="display-6 fw-bold text-center mb-5"><span style="color: #06659b;">Meet</span> the Team</h2>
+      <div class="row g-4">
+        <!-- Team Member 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm border-0 text-center">
+            <img src="images/header/bill.jpeg" class="img-fluid rounded-circle mx-auto mt-4" alt="Makaka Bill"
+              style="width: 150px; height: 150px;">
+            <div class="card-body">
+              <h5 class="fw-bold">Makaka Bill</h5>
+              <p class="text-muted">Founder & CEO</p>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                data-bs-target="#marie">
+                <i class="fas fa-plus-circle me-1"></i> More Info
+              </button>
             </div>
-
-            <div class="col-md-6">
-              <h2 class="text-primary mb-3">
-                WHO <span style="color: #06659b">WE</span> ARE
-              </h2>
-              <br>
-              <p>
-                We are a data analysis company based in Nairobi, Kenya. We
-                specialize in data science, business consultancy, academic and
-                market research, and software development. We are the missing
-                piece that will give your business that competitive edge.
-              </p>
-              <p>
-                The future belongs to those individuals and businesses that let
-                their data work for them today. We catalyze the process of
-                realizing that future by offering unmatched professional
-                expertise in data analysis and market research.
-              </p>
-              <p>
-                We ensure that your business has the requisite tools to compete
-                in today’s world. At unbeatable prices, we offer comprehensive
-                custom software solutions.
-              </p>
-              <a href="./datascience.html" class="btn mt-3"  style="background-color: #06659b; color:#f8f9fa;">Learn More</a>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm border-0 text-center">
+            <img src="images/header/neville.png" class="img-fluid rounded-circle mx-auto mt-4" alt="Neville Apondi"
+              style="width: 150px; height: 150px;">
+            <div class="card-body">
+              <h5 class="fw-bold">Neville Apondi</h5>
+              <p class="text-muted">Marketing</p>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                data-bs-target="#kelly">
+                <i class="fas fa-plus-circle me-1"></i> More Info
+              </button>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="team section-padding" style="background-color: #f8f9fa;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="mb-5 text-center">
-          <span style="color: #06659b">Meet</span> the <span>Team</span>
-        </h2>
-      </div>
-
-      <!-- Team Member 1 -->
-  <div class="col-lg-4 mb-lg-0 mb-4 col-12">
-        <div class="team-thumb d-flex align-items-center justify-content-center card h-100 shadow-sm border-0 hover-shadow">
-          <img
-            src="images/header/bill.jpeg"
-            class="img-fluid custom-circle-image team-image mb-3"
-            alt="Makaka Bill"
-          />
-          <div class="team-info text-center">
-            <h5 class="mb-0 font-weight-bold">Makaka Bill</h5>
-            <strong class="text-muted">Founder & CEO</strong>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn custom-modal-btn mt-3"
-              data-bs-toggle="modal"
-              data-bs-target="#marie"
-            >
-              <i class="bi bi-plus-circle-fill"></i>
-            </button>
+        <!-- Team Member 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm border-0 text-center">
+            <img src="images/header/mwangi1.jpg" class="img-fluid rounded-circle mx-auto mt-4" alt="Mwangi Brian"
+              style="width: 150px; height: 150px;">
+            <div class="card-body">
+              <h5 class="fw-bold">Mwangi Brian</h5>
+              <p class="text-muted">Software Engineer</p>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#don">
+                <i class="fas fa-plus-circle me-1"></i> More Info
+              </button>
+            </div>
           </div>
         </div>
       </div>
- <!-- Team Member 2 -->
-      <div class="col-lg-4 mb-4 col-12">
-        <div class="team-thumb d-flex align-items-center justify-content-center card h-100 shadow-sm border-0 hover-shadow">
-          <img
-            src="images/header/neville.png"
-            class="img-fluid custom-circle-image team-image mb-3"
-            alt="Neville Apondi"
-          />
-          <div class="team-info text-center">
-            <h5 class="mb-0 font-weight-bold">Neville Apondi</h5>
-            <strong class="text-muted">Marketing</strong>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn custom-modal-btn mt-3"
-              data-bs-toggle="modal"
-              data-bs-target="#kelly"
-            >
-              <i class="bi bi-plus-circle-fill"></i>
-            </button>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials py-5">
+    <div class="container">
+      <h2 class="display-6 fw-bold text-center mb-5">What <span style="color: #06659b;">They</span> Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm p-4 h-100">
+            <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b;"></i>
+            <h5 class="fw-bold">Positive Impact</h5>
+            <p>Your courses have positively impacted me. I finally solved the problem of developing dashboards using
+              PowerBI after advanced Excel classes.</p>
+            <div class="d-flex align-items-center mt-3">
+              <img src="./images/header/student.png" alt="Immculate Bwire" class="rounded-circle me-3"
+                style="width: 50px;">
+              <div>
+                <p class="fw-bold mb-0">Immculate Bwire</p>
+                <small class="text-muted">Alumni</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-4 h-100">
+            <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b;"></i>
+            <h5 class="fw-bold">Concepts Well Explained</h5>
+            <p>Today's online class was amazing. Concepts were well explained, and the instructor was patient with our
+              problems.</p>
+            <div class="d-flex align-items-center mt-3">
+              <img src="./images/header/student.png" alt="Emilly Nyarenchi" class="rounded-circle me-3"
+                style="width: 50px;">
+              <div>
+                <p class="fw-bold mb-0">Emilly Nyarenchi</p>
+                <small class="text-muted">Alumni</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-4 h-100">
+            <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b;"></i>
+            <h5 class="fw-bold">Topics Well Explained</h5>
+            <p>The topics are well explained, and the pace is fine. Thank you, team instructors.</p>
+            <div class="d-flex align-items-center mt-3">
+              <img src="./images/header/student.png" alt="Mukui Mbindio" class="rounded-circle me-3"
+                style="width: 50px;">
+              <div>
+                <p class="fw-bold mb-0">Mukui Mbindio</p>
+                <small class="text-muted">Alumni</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-<div class="col-lg-4 mb-4 col-12">
-        <div class="team-thumb d-flex align-items-center justify-content-center card h-100 shadow-sm border-0 hover-shadow">
-          <img
-            src="images/header/mwangi1.jpg"
-            class="img-fluid custom-circle-image team-image mb-3"
-            alt="Mwangi Brian"
-          />
-          <div class="team-info text-center">
-            <h5 class="mb-0 font-weight-bold">Mwangi Brian</h5>
-            <strong class="text-muted">Software Engineer</strong>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn custom-modal-btn mt-3"
-              data-bs-toggle="modal"
-              data-bs-target="#don"
-            >
-              <i class="bi bi-plus-circle-fill"></i>
-            </button>
+    </div>
+  </section>
+
+  <!-- Team Member Modals -->
+  <!-- Makaka Bill -->
+  <div class="modal fade" id="marie" tabindex="-1" aria-labelledby="marieLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="marieLabel">Makaka <span style="color: #fea300;">Bill</span></h3>
+          <h6 class="text-muted">Founder & CEO</h6>
+          <button type="button" class="btn-close team-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mb-4">Bill is a seasoned data science and digital marketing professional leading Sigma Africa since
+            November 2023.</h5>
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <p>With a BSc in Statistics from the University of Nairobi, Bill excels in quantitative analysis and
+                data-driven decisions. His experience in Canada and Kenya has deepened his expertise in industry trends
+                and technologies.</p>
+            </div>
+            <div class="col-lg-6">
+              <p>Bill’s leadership and technical skills in big data, analytics, and machine learning drive innovative
+                solutions for complex business challenges.</p>
+            </div>
           </div>
+          <ul class="list-inline social-icon">
+            <li class="list-inline-item me-3"><strong>Where to find?</strong></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/billshikuku/"
+                class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-      <section class="featured-product section-padding">
-        <div class="container py-5">
-          <h2 class="text-primary text-center mb-4">
-            WHAT <span style="color: #06659b">THEY</span> SAY
-          </h2>
-          <div class="row">
-            <!-- Testimonial 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="card testimonial-card h-100 shadow-sm">
-                <div class="card-body">
-                  <i class="fas fa-quote-left fa-2x text-primary"></i>
-                  <h5 class="font-weight-bold mt-3">POSITIVE IMPACT</h5>
-                  <p class="mt-3">
-                    Your courses have positively impacted me. I finally solved
-                    the problem I had of developing dashboards. Went ahead to
-                    use PowerBI after realizing advanced Excel classes are very
-                    similar to Power BI. I will enroll for other upcoming
-                    courses to build up my skills. Thanks very much.
-                  </p>
-
-                  <div class="d-flex align-items-center mt-4">
-                    <img
-                      src="./images/header/student.png"
-                      alt="Joel Mwando"
-                      class="testimonial-img rounded-circle"
-                    />
-                    &nbsp; &nbsp; &nbsp;
-                    <div class="ml-3">
-                      <p class="font-weight-bold mb-0">Immculate Bwire</p>
-                      <small class="text-muted">Alumni</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="card testimonial-card h-100 shadow-sm">
-                <div class="card-body">
-                  <i class="fas fa-quote-left fa-2x text-primary"></i>
-                  <h5 class="font-weight-bold mt-3">CONCEPTS WELL EXPLAINED</h5>
-                  <p class="mt-3">
-                    Today's online class was amazing. Concepts were well
-                    explained and confusions were cleared up. The instructor was
-                    very gracious and patient with our problems.
-                  </p>
-                  <div class="d-flex align-items-center mt-4">
-                    <img
-                      src="./images/header/student.png"
-                      alt="Betty Kamau"
-                      class="testimonial-img rounded-circle"
-                    />
-                    &nbsp; &nbsp; &nbsp;
-                    <div class="ml-3">
-                      <p class="font-weight-bold mb-0">Emilly Nyarenchi</p>
-                      <small class="text-muted">Alumni</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="card testimonial-card h-100 shadow-sm">
-                <div class="card-body">
-                  <i class="fas fa-quote-left fa-2x text-primary"></i>
-                  <h5 class="font-weight-bold mt-3">TOPICS WELL EXPLAINED</h5>
-                  <p class="mt-3">
-                    The topics are well explained and pace is fine. Thank you so
-                    much team instructors.
-                  </p>
-                  <div class="d-flex align-items-center mt-4">
-                    <img
-                      src="./images/header/student.png"
-                      alt="Ingrid Amunga"
-                      class="testimonial-img rounded-circle"
-                    />
-                    &nbsp; &nbsp; &nbsp;
-                    <div class="ml-3">
-                      <p class="font-weight-bold mb-0">Mukui Mbindio</p>
-                      <small class="text-muted">Alumni</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Neville Apondi -->
+  <div class="modal fade" id="kelly" tabindex="-1" aria-labelledby="kellyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="kellyLabel">Neville <span style="color: #fea300;">Apondi</span></h3>
+          <h6 class="text-muted">Marketing</h6>
+          <button type="button" class="btn-close team-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </section>
-
-    <!-- TEAM MEMBER MODAL -->
-    <div
-      class="modal fade"
-      id="don"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content border-0">
-          <div class="modal-header flex-column">
-            <h3 class="modal-title" id="exampleModalLabel">Mwangi <span style="color: #fea300;">Brian</span></h3>
-
-            <h6 class="text-muted">Software Engineer</h6>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <h5 class="mb-4">
-              Over three years in business had the chance to work on variety of
-              projects, with companies
-            </h5>
-
-            <div class="row mb-4">
-              <div class="col-lg-6 col-12">
-                <p>
-                 With over three years of experience in software engineering, I've had the opportunity to work on diverse projects, collaborating with a range of companies to build impactful solutions.
-                </p>
-              </div>
-
-              <div class="col-lg-6 col-12">
-                <p>
-                  Through these projects, I’ve gained hands-on experience in designing, developing, and optimizing applications that meet both client and user needs. I’m committed to delivering high-quality code and driving innovation to solve complex challenges.
-                </p>
-              </div>
+        <div class="modal-body">
+          <h5 class="mb-4">Over three years in digital marketing, driving growth through impactful campaigns.</h5>
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <p>Neville has worked with brands to create data-driven campaigns across content marketing, SEO, PPC, and
+                social media, enhancing engagement and growth.</p>
             </div>
-
-            <ul class="social-icon">
-              <li class="me-3"><strong>Where to find?</strong></li>
-
-             <li><a href="https://www.linkedin.com/in/mwangi-brian-68732527b/" class="social-icon-link bi-linkedin"></a></li>
-
-            </ul>
+            <div class="col-lg-6">
+              <p>Passionate about crafting resonant brand stories, Neville uses analytics to optimize campaign
+                performance.</p>
+            </div>
           </div>
+          <ul class="list-inline social-icon">
+            <li class="list-inline-item me-3"><strong>Where to find?</strong></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/neville-shikuku-a60139237"
+                class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
-
-    <!-- TEAM MEMBER MODAL -->
-    <div
-      class="modal fade"
-      id="kelly"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content border-0">
-          <div class="modal-header flex-column">
-            <h3 class="modal-title" id="exampleModalLabel">Neville <span style="color: #fea300;">Apondi</span></h3>
-
-            <h6 class="text-muted">Marketing</h6>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <h5 class="mb-4">
-              Over three years in business had the chance to work on variety of
-              projects, with companies
-            </h5>
-
-            <div class="row mb-4">
-              <div class="col-lg-6 col-12">
-                <p>
-                 With over three years in digital marketing, I’ve had the privilege of working with various brands to create impactful campaigns that drive growth and engagement. From crafting data-driven strategies to managing multi-channel campaigns, my experience spans content marketing, SEO, PPC, and social media
-                </p>
-              </div>
-
-              <div class="col-lg-6 col-12">
-                <p>
-                 I’m passionate about building brand stories that resonate with audiences and leveraging analytics to continuously refine and optimize our efforts.
-                </p>
-              </div>
+  </div>
+  <!-- Mwangi Brian -->
+  <div class="modal fade" id="don" tabindex="-1" aria-labelledby="donLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="donLabel">Mwangi <span style="color: #fea300;">Brian</span></h3>
+          <h6 class="text-muted">Software Engineer</h6>
+          <button type="button" class="btn-close team-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mb-4">Three years of experience building impactful software solutions.</h5>
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <p>Brian has worked on diverse projects, collaborating with companies to design and develop applications
+                that meet client and user needs.</p>
             </div>
-
-            <ul class="social-icon">
-              <li class="me-3"><strong>Where to find?</strong></li>
-
-<li><a href=" https://www.linkedin.com/in/neville-shikuku-a60139237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_apps" class="social-icon-link bi-linkedin"></a></li>
-            </ul>
+            <div class="col-lg-6">
+              <p>Committed to high-quality code, Brian drives innovation to solve complex challenges through optimized
+                applications.</p>
+            </div>
           </div>
+          <ul class="list-inline social-icon">
+            <li class="list-inline-item me-3"><strong>Where to find?</strong></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/mwangi-brian-68732527b/"
+                class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- TEAM MEMBER MODAL -->
-    <div
-      class="modal fade"
-      id="marie"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content border-0">
-          <div class="modal-header flex-column">
-            <h3 class="modal-title" id="exampleModalLabel">Makaka <span style="color: #fea300;">Bill </span></h3>
-
-            <h6 class="text-muted">Founder & CEO</h6>
-
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-            <h5 class="mb-4">
-Bill is a seasoned data science and digital marketing professional with a proven track record of success. As the Founder, CEO, and COO of Sigma Africa, he has spearheaded the company's rapid growth since its inception in November 2023.            </h5>
-
-            <div class="row mb-4">
-              <div class="col-lg-6 col-12">
-                <p>
-                 With a BSc in Statistics from the University of Nairobi, Bill brings a strong foundation in quantitative analysis and data-driven decision-making. His extensive experience in data science and digital marketing, honed through projects in both Canada and Kenya, has enabled him to develop a deep understanding of industry trends and emerging technologies.
-
-                </p>
-              </div>
-
-              <div class="col-lg-6 col-12">
-                <p>
-               
-                 Bill's technical proficiency is complemented by his strong leadership and entrepreneurial skills. He is passionate about leveraging data to drive business growth and empower organizations. His expertise in big data technologies, data analysis, and machine learning allows him to deliver innovative solutions that address complex business challenges.
-                </p>
-              </div>
-            </div>
-
-            <ul class="social-icon">
-              <li class="me-3"><strong>Where to find?</strong></li>
-
-
-              <li><a href=" https://www.linkedin.com/in/billshikuku/" class="social-icon-link bi-linkedin"></a></li>
-
-            </ul>
-          </div>
+  <!-- Footer Section -->
+  <footer class="py-5 text-white" style="background-color: #06659b;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Latest News</h5>
+          <p>Subscribe to get the latest news delivered to your inbox.</p>
+          <form class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
         </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Sigma <span style="color: #fea300;">Africa</span> Accelerate</h5>
+          <p>A Nairobi-based data analysis company specializing in data science, consultancy, research, and web
+            development.</p>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fw-bold">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="community.html" class="text-white text-decoration-none">Community</a></li>
+            <li><a href="blogs.html" class="text-white text-decoration-none">Blogs</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fw-bold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="datascience.html" class="text-white text-decoration-none">Data Science</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Academic & Market Research</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Business Consultancy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Software Development</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p><i class="fas fa-phone-alt me-2" style="color: #fea300;"></i> +254746910922</p>
+          <p><i class="fas fa-envelope me-2" style="color: #fea300;"></i> sigmanalytics09@gmail.com</p>
+          <p><i class="fas fa-globe me-2"></i> www.sigma.io</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <small>©2025 Sigma <span style="color: #fea300;">Africa</span> Accelerate</small>
       </div>
     </div>
+  </footer>
 
-     <footer
-      class="site-footer text-white pt-5"
-      style="background-color: #06659b"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Newsletter Section -->
-          <div class="col-lg-4 mb-4">
-            <h5 class="font-weight-bold">Latest News</h5>
-            <p>Get latest news delivered directly to your inbox.</p>
-            <div class="input-group">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Enter your email address"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-dark" type="button">Subscribe</button>
-              </div>
-            </div>
-          </div>
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    // Ensure modals close without affecting underlying content
+    document.querySelectorAll('.team-modal-close').forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) backdrop.remove();
+        // Ensure team section remains visible
+        document.querySelector('.team').style.display = 'block';
+      });
+    });
 
-          <!-- About Section -->
-          <div class="col-lg-4 mb-4">
-            <h5 class="font-weight-bold">
-              Sigma <span style="color: #fea300">Africa</span> Accelerate
-            </h5>
-            <p>
-              We are a data analysis company based in Nairobi, Kenya. We
-              specialize in data science, business consultancy, academic and
-              market research, and web development. We are the missing piece
-              that will give your business that competitive edge.
-            </p>
-          </div>
+    // Ensure focus returns to the triggering button after modal close
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('hidden.bs.modal', (event) => {
+        const triggerButton = document.querySelector(`[data-bs-target="#${modal.id}"]`);
+        if (triggerButton) triggerButton.focus();
+      });
+    });
+  </script>
+</body>
 
-          <!-- Useful Links Section -->
-          <div class="col-lg-2 mb-4">
-            <h5 class="font-weight-bold">Useful Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="/index.html" class="text-white">Home</a></li>
-              <li><a href="/about.html" class="text-white">About Us</a></li>
-              <li>
-                <a href="./community.html" class="text-white">Community</a>
-              </li>
-              <li><a href="./blogs.html" class="text-white">Blogs</a></li>
-              <li><a href="/contact.html" class="text-white">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <!-- Services Section -->
-          <div class="col-lg-2 mb-4">
-            <h5 class="font-weight-bold">Our Services</h5>
-            <ul class="list-unstyled">
-              <li><a href="./datascience.html" class="text-white">Data Science</a></li>
-              <li>
-                <a href="#" class="text-white">Academic And Market Research</a>
-              </li>
-              <li><a href="#" class="text-white">Business Consultancy</a></li>
-              <li><a href="#" class="text-white">Software Development</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="row">
-          <div class="col-lg-4">
-            <h5 class="font-weight-bold">Contact Us</h5>
-            <p>
-              <i class="fas fa-phone-alt" style="color: #fea300"></i
-              >&nbsp;+254746910922
-            </p>
-            <p>
-              <i class="fas fa-envelope" style="color: #fea300"></i
-              >&nbsp;sigmanalytics09@gmail.com
-            </p>
-            <p><i class="fas fa-globe mr-2"></i>&nbsp;www.sigma.io</p>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="text-center py-3">
-          <small
-            >©2024 Sigma
-            <span style="color: #fea300">Africa</span> Accelerate</small
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
 </html>

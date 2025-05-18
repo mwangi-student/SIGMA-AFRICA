@@ -1,304 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="icon" href="./images/header/sigmaicon.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore Sigma Africa's blogs on career insights, tech innovations, and work trends to stay ahead in a data-driven world.">
+  <meta name="author" content="Sigma Africa">
+  <link rel="icon" href="./images/header/sigmaicon.png">
+  <title>Sigma Africa - Blogs</title>
 
-    <title>SIGMA AFRICA</title>
+  <!-- CSS FILES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/sigma.css">
+</head>
 
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/slick.css" />
-
-    <link href="css/sigma.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <section class="preloader">
-      <div class="spinner">
-        <span class="sk-inner-circle"></span>
-      </div>
-    </section>
-
-    <main>
-      <header class="mb-4">
-        <nav
-          class="navbar navbar-expand-lg"
-          style="height: 87px; background-color: #ffffff; color: #f8f9fa"
-        >
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
               <img
                 src="./images/header/sigma-logo.png"
                 alt="Sigma's logo"
                 style="height: 30pxx"
               />
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
-                </li>
+  <!-- Hero Section -->
+  <section class="hero py-5 text-white" style="background: linear-gradient(90deg, #0a2540, #06659b);">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold">
+        <span style="color: #fea300;">Sigma Africa</span> Blogs
+      </h1>
+      <h2 class="h3 mb-4">Insights & Trends</h2>
+      <p class="lead mb-5 text-light" style="max-width: 600px; margin: 0 auto;">
+        Stay ahead with our blogs on career insights, tech innovations, and work trends in a data-driven world.
+      </p>
+    </div>
+  </section>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="community.html">Community</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active" href="./blogs.html">Blogs</a>
-                </li>
+  <!-- Blogs Section -->
+  <section class="blogs py-5">
+    <div class="container">
+      <h2 class="display-6 fw-bold text-center mb-5">
+        Our <span style="color: #06659b;">Blogs</span>
+      </h2>
+      <div class="row g-4">
+        <!-- Sidebar -->
+        <div class="col-lg-3 col-md-4">
+          <div class="sidebar bg-light p-4 rounded shadow-sm">
+            <!-- Search Bar -->
+            <div class="mb-4">
+              <h5 class="fw-bold mb-3">Search Blogs</h5>
+              <div class="input-group">
+                <input type="text" id="blogSearch" class="form-control" placeholder="Search..."
+                  aria-label="Search blogs">
+                <button class="btn btn-outline-primary" type="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <!-- Categories -->
+            <div class="mb-4">
+              <h5 class="fw-bold mb-3">Categories</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="all">All</button>
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="Career Insights">Career
+                  Insights</button>
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="Tech Revolution">Tech
+                  Revolution</button>
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="Work Trends">Work
+                  Trends</button>
+              </div>
+            </div>
+            <!-- Recent Posts -->
+            <div>
+              <h5 class="fw-bold mb-3">Recent Posts</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" class="text-decoration-none blog-link" data-bs-toggle="modal"
+                    data-bs-target="#blog1Modal">Top 5 Skills to Master by 2025</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none blog-link" data-bs-toggle="modal"
+                    data-bs-target="#blog2Modal">The Journey of Innovation</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none blog-link" data-bs-toggle="modal"
+                    data-bs-target="#blog3Modal">The Future of Remote Work</a></li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
-
-      <header class="site-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-12">
-              <h1>Category: <span style="color: #fea300">Blogs</span><br /></h1>
-            </div>
-          </div>
         </div>
-      </header>
-
-      <section class="contact section-padding">
-        <div class="container">
-          <!-- Story 1 -->
-          <div class="container border mt-4">
-            <div class="row story-section align-items-center">
-              <div class="col-md-4">
-                <img
-                  src="./images/header/careerinsights.jpeg"
-                  alt="Top Skills for 2025"
-                />
+        <!-- Blog Content -->
+        <div class="col-lg-9 col-md-8">
+          <div class="row g-4 blog-container">
+            <!-- Blog 1 -->
+            <div class="col-md-6 blog-card" data-category="Career Insights">
+              <div class="card shadow-sm h-100">
+                <img src="images/header/careerinsights.jpeg" class="card-img-top" alt="Top Skills for 2025">
+                <div class="card-body">
+                  <p class="text-muted small mb-2">Career Insights</p>
+                  <h5 class="card-title fw-bold">
+                    Top <span style="color: #fea300;">5 Skills</span> to Master by <span
+                      style="color: #fea300;">2025</span>
+                  </h5>
+                  <p class="card-text">
+                    As industries evolve, these five skills will keep you ahead of the curve.
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#blog1Modal">Read More</button>
+                </div>
               </div>
-              <div class="col-md-8">
-                <p style="color: #ffa600">Career Insights</p>
-                <h3 style="color: #050505">
-                  Top <span style="color: #fea300">5 Skills</span> to Master by
-                  <span style="color: #fea300">2025</span>
-                </h3>
-                <p class="story-text">
-                  As industries evolve, these five skills will keep you ahead of
-                  the curve...
-                </p>
-                <p class="full-story">
-                  With AI, cybersecurity, and data analysis dominating the
-                  workforce, mastering skills like critical thinking, emotional
-                  intelligence, and digital fluency will be crucial for future
-                  success. Don't get left behind—prepare for the workforce of
-                  tomorrow today!
-                </p>
-                <span class="read-more">Read More</span>
+            </div>
+            <!-- Blog 2 -->
+            <div class="col-md-6 blog-card" data-category="Tech Revolution">
+              <div class="card shadow-sm h-100">
+                <img src="images/header/techrevolution.jpg" class="card-img-top" alt="Journey of Innovation">
+                <div class="card-body">
+                  <p class="text-muted small mb-2">Tech Revolution</p>
+                  <h5 class="card-title fw-bold">
+                    The <span style="color: #fea300;">Journey</span> of Innovation: From <span
+                      style="color: #fea300;">Idea</span> to Reality
+                  </h5>
+                  <p class="card-text">
+                    Learn how a simple idea transformed into a groundbreaking innovation.
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#blog2Modal">Read More</button>
+                </div>
+              </div>
+            </div>
+            <!-- Blog 3 -->
+            <div class="col-md-6 blog-card" data-category="Work Trends">
+              <div class="card shadow-sm h-100">
+                <img src="images/header/worktrend.jpeg" class="card-img-top" alt="Future of Remote Work">
+                <div class="card-body">
+                  <p class="text-muted small mb-2">Work Trends</p>
+                  <h5 class="card-title fw-bold">
+                    The <span style="color: #fea300;">Future</span> of <span style="color: #fea300;">Remote Work</span>:
+                    Opportunities & Challenges
+                  </h5>
+                  <p class="card-text">
+                    As remote work becomes the norm, what does the future hold?
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#blog3Modal">Read More</button>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Story 2 -->
-          <div class="container border mt-4">
-            <div class="row story-section align-items-center">
-              <div class="col-md-4">
-                <img
-                  src="./images/header/techrevolution.jpg"
-                  alt="Journey of Innovation"
-                />
-              </div>
-              <div class="col-md-8">
-                <p style="color: #ffa600">Tech Revolution</p>
-                <h3 style="color: #050505">
-                  The <span style="color: #fea300">Journey</span> of Innovation:
-                  From <span style="color: #fea300">Idea</span> to Reality
-                </h3>
-                <p class="story-text">
-                  Learn how a simple idea transformed into a groundbreaking
-                  innovation...
-                </p>
-                <p class="full-story">
-                  This is the story of a young innovator who identified a
-                  problem in his community and turned it into a global tech
-                  solution. His determination, creativity, and resilience are a
-                  reminder that great ideas can come from anyone, anywhere.
-                </p>
-                <span class="read-more">Read More</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story 3 -->
-          <div class="container border mt-4">
-            <div class="row story-section align-items-center">
-              <div class="col-md-4">
-                <img
-                  src="./images/header/worktrend.jpeg"
-                  alt="Future of Remote Work"
-                />
-              </div>
-              <div class="col-md-8">
-                <p style="color: #ffa600">Work Trends</p>
-                <h3 style="color: #050505">
-                  The <span style="color: #fea300">Future</span> of
-                  <span style="color: #fea300">Remote Work</span>: Opportunities
-                  & Challenges
-                </h3>
-                <p class="story-text">
-                  As remote work becomes the norm, what does the future hold?
-                </p>
-                <p class="full-story">
-                  With flexible schedules, global talent pools, and increased
-                  productivity, remote work has reshaped industries. However, it
-                  also brings challenges like isolation, time management, and
-                  blurred work-life boundaries. Learn how to navigate this new
-                  world effectively.
-                </p>
-                <span class="read-more">Read More</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer
-      class="site-footer text-white pt-5"
-      style="background-color: #06659b"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Newsletter Section -->
-          <div class="col-lg-4 mb-4">
-            <h5 class="font-weight-bold">Latest News</h5>
-            <p>Get latest news delivered directly to your inbox.</p>
-            <div class="input-group">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Enter your email address"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-dark" type="button">Subscribe</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- About Section -->
-          <div class="col-lg-4 mb-4">
-            <h5 class="font-weight-bold">
-              Sigma <span style="color: #fea300">Africa</span> Accelerate
-            </h5>
-            <p>
-              We are a data analysis company based in Nairobi, Kenya. We
-              specialize in data science, business consultancy, academic and
-              market research, and web development. We are the missing piece
-              that will give your business that competitive edge.
-            </p>
-          </div>
-
-          <!-- Useful Links Section -->
-          <div class="col-lg-2 mb-4">
-            <h5 class="font-weight-bold">Useful Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="/index.html" class="text-white">Home</a></li>
-              <li><a href="/about.html" class="text-white">About Us</a></li>
-              <li>
-                <a href="./community.html" class="text-white">Community</a>
-              </li>
-              <li><a href="./blogs.html" class="text-white">Blogs</a></li>
-              <li><a href="/contact.html" class="text-white">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <!-- Services Section -->
-          <div class="col-lg-2 mb-4">
-            <h5 class="font-weight-bold">Our Services</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="./datascience.html" class="text-white">Data Science</a>
-              </li>
-              <li>
-                <a href="#" class="text-white">Academic And Market Research</a>
-              </li>
-              <li><a href="#" class="text-white">Business Consultancy</a></li>
-              <li><a href="#" class="text-white">Software Development</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="row">
-          <div class="col-lg-4">
-            <h5 class="font-weight-bold">Contact Us</h5>
-            <p>
-              <i class="fas fa-phone-alt" style="color: #fea300"></i
-              >&nbsp;+254746910922
-            </p>
-            <p>
-              <i class="fas fa-envelope" style="color: #fea300"></i
-              >&nbsp;sigmanalytics09@gmail.com
-            </p>
-            <p><i class="fas fa-globe mr-2"></i>&nbsp;www.sigma.io</p>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="text-center py-3">
-          <small
-            >©2024 Sigma
-            <span style="color: #fea300">Africa</span> Accelerate</small
-          >
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script>
-      document.querySelectorAll(".read-more").forEach((button) => {
-        button.addEventListener("click", () => {
-          const fullStory = button.previousElementSibling;
-          fullStory.style.display =
-            fullStory.style.display === "block" ? "none" : "block";
-          button.textContent =
-            button.textContent === "Read More" ? "Show Less" : "Read More";
-        });
+  <!-- Blog Modals -->
+  <!-- Blog 1 Modal -->
+  <div class="modal fade" id="blog1Modal" tabindex="-1" aria-labelledby="blog1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="blog1ModalLabel">Top <span style="color: #fea300;">5 Skills</span> to Master by
+            <span style="color: #fea300;">2025</span>
+          </h3>
+          <p class="text-muted small mt-2">Category: Career Insights</p>
+          <button type="button" class="btn-close blog-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/header/careerinsights.jpeg" alt="Top Skills for 2025" class="img-fluid rounded mb-3"
+            style="max-height: 200px;">
+          <p>With AI, cybersecurity, and data analysis dominating the workforce, mastering skills like critical
+            thinking, emotional intelligence, and digital fluency will be crucial for future success. Don’t get left
+            behind—prepare for the workforce of tomorrow today!</p>
+          <p>Key skills include:</p>
+          <ul>
+            <li><strong>Critical Thinking:</strong> Analyze complex problems effectively.</li>
+            <li><strong>Emotional Intelligence:</strong> Build stronger workplace relationships.</li>
+            <li><strong>Digital Fluency:</strong> Adapt to new technologies quickly.</li>
+            <li><strong>Data Analysis:</strong> Leverage data for decision-making.</li>
+            <li><strong>Cybersecurity Awareness:</strong> Protect against digital threats.</li>
+          </ul>
+          <div class="mt-3">
+            <strong>Share this post:</strong>
+            <ul class="list-inline mt-2">
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-linkedin"><i
+                    class="fab fa-linkedin fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-email"><i
+                    class="fas fa-envelope fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog 2 Modal -->
+  <div class="modal fade" id="blog2Modal" tabindex="-1" aria-labelledby="blog2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="blog2ModalLabel">The <span style="color: #fea300;">Journey</span> of Innovation:
+            From <span style="color: #fea300;">Idea</span> to Reality</h3>
+          <p class="text-muted small mt-2">Category: Tech Revolution</p>
+          <button type="button" class="btn-close blog-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/header/techrevolution.jpg" alt="Journey of Innovation" class="img-fluid rounded mb-3"
+            style="max-height: 200px;">
+          <p>This is the story of a young innovator who identified a problem in his community and turned it into a
+            global tech solution. His determination, creativity, and resilience are a reminder that great ideas can come
+            from anyone, anywhere.</p>
+          <p>Steps in the journey:</p>
+          <ul>
+            <li><strong>Ideation:</strong> Identifying a local problem with global potential.</li>
+            <li><strong>Prototyping:</strong> Building a minimum viable product.</li>
+            <li><strong>Collaboration:</strong> Partnering with tech communities.</li>
+            <li><strong>Scaling:</strong> Expanding the solution globally.</li>
+          </ul>
+          <div class="mt-3">
+            <strong>Share this post:</strong>
+            <ul class="list-inline mt-2">
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-linkedin"><i
+                    class="fab fa-linkedin fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-email"><i
+                    class="fas fa-envelope fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog 3 Modal -->
+  <div class="modal fade" id="blog3Modal" tabindex="-1" aria-labelledby="blog3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="blog3ModalLabel">The <span style="color: #fea300;">Future</span> of <span
+              style="color: #fea300;">Remote Work</span>: Opportunities & Challenges</h3>
+          <p class="text-muted small mt-2">Category: Work Trends</p>
+          <button type="button" class="btn-close blog-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/header/worktrend.jpeg" alt="Future of Remote Work" class="img-fluid rounded mb-3"
+            style="max-height: 200px;">
+          <p>With flexible schedules, global talent pools, and increased productivity, remote work has reshaped
+            industries. However, it also brings challenges like isolation, time management, and blurred work-life
+            boundaries. Learn how to navigate this new world effectively.</p>
+          <p>Key considerations:</p>
+          <ul>
+            <li><strong>Opportunities:</strong> Flexibility, cost savings, and global collaboration.</li>
+            <li><strong>Challenges:</strong> Isolation, communication barriers, and work-life balance.</li>
+            <li><strong>Solutions:</strong> Use collaboration tools, set boundaries, and prioritize mental health.</li>
+          </ul>
+          <div class="mt-3">
+            <strong>Share this post:</strong>
+            <ul class="list-inline mt-2">
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-linkedin"><i
+                    class="fab fa-linkedin fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-email"><i
+                    class="fas fa-envelope fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="py-5 text-white" style="background-color: #06659b;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Latest News</h5>
+          <p>Subscribe to get the latest news delivered to your inbox.</p>
+          <form class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Sigma <span style="color: #fea300;">Africa</span> Accelerate</h5>
+          <p>A Nairobi-based data analysis company specializing in data science, consultancy, research, and web
+            development.</p>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fw-bold">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="community.html" class="text-white text-decoration-none">Community</a></li>
+            <li><a href="blogs.html" class="text-white text-decoration-none">Blogs</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fw-bold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="datascience.html" class="text-white text-decoration-none">Data Science</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Academic & Market Research</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Business Consultancy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Software Development</a></li>
+            </ului>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p><i class="fas fa-phone-alt me-2" style="color: #fea300;"></i> +254746910922</p>
+          <p><i class="fas fa-envelope me-2" style="color: #fea300;"></i> sigmanalytics09@gmail.com</p>
+          <p><i class="fas fa-globe me-2"></i> www.sigma.io</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <small>©2025 Sigma <span style="color: #fea300;">Africa</span> Accelerate</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    // Modal close functionality
+    document.querySelectorAll('.blog-modal-close').forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) backdrop.remove();
+        document.querySelector('.blogs').style.display = 'block';
       });
-    </script>
+    });
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+    // Focus management for modals
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('hidden.bs.modal', (event) => {
+        const triggerButton = document.querySelector(`[data-bs-target="#${modal.id}"]`);
+        if (triggerButton) triggerButton.focus();
+      });
+    });
+
+    // Category filter
+    document.querySelectorAll('.category-filter').forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        document.querySelectorAll('.blog-card').forEach(card => {
+          card.style.display = category === 'all' || card.getAttribute('data-category') === category ? 'block' : 'none';
+        });
+        document.querySelectorAll('.category-filter').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+    // Search functionality
+    document.getElementById('blogSearch').addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      document.querySelectorAll('.blog-card').forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        const category = card.getAttribute('data-category').toLowerCase();
+        card.style.display = title.includes(searchTerm) || category.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+
+    // Share button functionality (placeholder URLs)
+    document.querySelectorAll('.share-linkedin').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+      });
+    });
+    document.querySelectorAll('.share-twitter').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent(link.closest('.modal').querySelector('.modal-title').textContent);
+        window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+      });
+    });
+    document.querySelectorAll('.share-email').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const subject = encodeURIComponent(link.closest('.modal').querySelector('.modal-title').textContent);
+        const body = encodeURIComponent(`Check out this blog post: ${window.location.href}`);
+        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      });
+    });
+  </script>
+</body>
+
 </html>

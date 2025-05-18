@@ -1,244 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="icon" href="./images/header/sigmaicon.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Discover inspiring stories from Sigma Africa's community, showcasing journeys in data science, software engineering, and more.">
+  <meta name="author" content="Sigma Africa">
+  <link rel="icon" href="./images/header/sigmaicon.png">
+  <title>Sigma Africa - Community Stories</title>
 
-    <title>SIGMA AFRICA</title>
+  <!-- CSS FILES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/sigma.css">
+</head>
 
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/slick.css" />
-
-    <link href="css/sigma.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <section class="preloader">
-      <div class="spinner">
-        <span class="sk-inner-circle"></span>
-      </div>
-    </section>
-
-    <main>
-      <header class="mb-4">
-        <nav
-          class="navbar navbar-expand-lg"
-          style="height: 87px; background-color: #ffffff; color: #f8f9fa"
-        >
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
               <img
                 src="./images/header/sigma-logo.png"
                 alt="Sigma's logo"
                 style="height: 30pxx"
               />
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="community.html">Community</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
-                </li>
+  <!-- Hero Section -->
+  <section class="hero py-5 text-white" style="background: linear-gradient(90deg, #0a2540, #06659b);">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold">
+        <span style="color: #fea300;">Community</span> Stories
+      </h1>
+      <h2 class="h3 mb-4">Inspiring Journeys</h2>
+      <p class="lead mb-5 text-light" style="max-width: 600px; margin: 0 auto;">
+        Discover the stories of individuals who have transformed their careers and lives through Sigma Africa's
+        community and resources.
+      </p>
+    </div>
+  </section>
 
-                <li class="nav-item">
-                  <a class="nav-link active" href="community.html">Community</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./blogs.html">Blogs</a>
-                </li>
+  <!-- Stories Section -->
+  <section class="stories py-5">
+    <div class="container">
+      <h2 class="display-6 fw-bold text-center mb-5">
+        <span style="color: #06659b;">Our</span> Stories
+      </h2>
+      <div class="row g-4">
+        <!-- Sidebar -->
+        <div class="col-lg-3 col-md-4">
+          <div class="sidebar bg-light p-4 rounded shadow-sm">
+            <!-- Search Bar -->
+            <div class="mb-4">
+              <h5 class="fw-bold mb-3">Search Stories</h5>
+              <div class="input-group">
+                <input type="text" id="storySearch" class="form-control" placeholder="Search..."
+                  aria-label="Search stories">
+                <button class="btn btn-outline-primary" type="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <!-- Categories -->
+            <div class="mb-4">
+              <h5 class="fw-bold mb-3">Categories</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="all">All</button>
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="Career Transitions">Career
+                  Transitions</button>
+                <button class="btn btn-outline-primary btn-sm category-filter" data-category="Data Science">Data
+                  Science</button>
+                <button class="btn btn-outline-primary btn-sm category-filter"
+                  data-category="Software Engineering">Software Engineering</button>
+              </div>
+            </div>
+            <!-- Featured Stories -->
+            <div>
+              <h5 class="fw-bold mb-3">Featured Stories</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" class="text-decoration-none story-link" data-bs-toggle="modal"
+                    data-bs-target="#story1Modal">From Psychology to Software Engineering</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none story-link" data-bs-toggle="modal"
+                    data-bs-target="#story2Modal">Discovering Data Science</a></li>
+                <li class="mb-2"><a href="#" class="text-decoration-none story-link" data-bs-toggle="modal"
+                    data-bs-target="#story3Modal">Building Scalable Solutions</a></li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
-
-      <header class="site-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-12">
-              <h1>
-                Category: <span style="color: #fea300">community</span><br />
-                <span>Stories</span>
-              </h1>
-            </div>
-          </div>
         </div>
-      </header>
-
-      <section class="contact section-padding">
-        <div class="container border">
-          <div class="container">
-            <div class="row story-section align-items-center">
-              <div class="col-md-4">
-                <img
-                  src="./images/header/mwangi1.jpg"
-                  alt="Mwangi Brian's Story"
-                />
-              </div>
-              <div class="col-md-8">
-                <p style="color: #ffa600">Community Stories</p>
-                <h3 style="color: #050505">
-                  From an Extensive Career in
-                  <span style="color: #fea300">Psychology</span> to
-                  <span style="color: #fea300">Software Engineering</span>
-                </h3>
-                <p class="story-text">
-                  Mwangi Brian shares his inspiring journey from psychology to
-                  software engineering...
-                </p>
-                <p class="full-story">
-                  After years in psychology, Mwangi embraced his passion for
-                  technology and transformed his career path into software
-                  engineering. His story serves as a motivation for others
-                  seeking to switch fields...
-                </p>
-                <span class="read-more">Read More</span>
+        <!-- Story Content -->
+        <div class="col-lg-9 col-md-8">
+          <div class="row g-4 story-container">
+            <!-- Story 1 -->
+            <div class="col-md-6 story-card" data-category="Career Transitions">
+              <div class="card shadow-sm h-100">
+                <img src="images/header/mwangi1.jpg" class="card-img-top" alt="Mwangi Brian's Story">
+                <div class="card-body">
+                  <p class="text-muted small mb-2">Career Transitions</p>
+                  <h5 class="card-title fw-bold">
+                    From <span style="color: #fea300;">Psychology</span> to <span style="color: #fea300;">Software
+                      Engineering</span>
+                  </h5>
+                  <p class="card-text">
+                    Mwangi Brian shares his journey from psychology to software engineering.
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#story1Modal">Read More</button>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- story 2 -->
-      </section>
-    </main>
-
-    <footer
-      class="site-footer text-white pt-5"
-      style="background-color: #06659b"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Newsletter Section -->
-          <div class="col-lg-4 mb-4">
-            <h5 class="font-weight-bold">Latest News</h5>
-            <p>Get latest news delivered directly to your inbox.</p>
-            <div class="input-group">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Enter your email address"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-dark" type="button">Subscribe</button>
+            <!-- Story 2 -->
+            <div class="col-md-6 story-card" data-category="Data Science">
+              <div class="card shadow-sm h-100">
+                <img src="images/header/data1.png" class="card-img-top" alt="Aisha's Story">
+                <div class="card-body">
+                  <p class="text-muted small mb-2">Data Science</p>
+                  <h5 class="card-title fw-bold">
+                    <span style="color: #fea300;">Discovering</span> Data Science: Aisha’s Journey
+                  </h5>
+                  <p class="card-text">
+                    Aisha found her calling in data science through Sigma Africa’s training.
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#story2Modal">Read More</button>
+                </div>
+              </div>
+            </div>
+            <!-- Story 3 -->
+            <div class="col-md-6 story-card" data-category="Software Engineering">
+              <div class="card shadow-sm h-100">
+                <img src="images/header/software-development.jpg" class="card-img-top" alt="James's Story">
+                <div class="card-body">
+                  <p class="text-muted small mb-2">Software Engineering</p>
+                  <h5 class="card-title fw-bold">
+                    Building <span style="color: #fea300;">Scalable</span> Solutions: James’s Story
+                  </h5>
+                  <p class="card-text">
+                    James leveraged Sigma Africa’s community to become a software engineer.
+                  </p>
+                  <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#story3Modal">Read More</button>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- About Section -->
-          <div class="col-lg-4 mb-4">
-            <h5 class="font-weight-bold">
-              Sigma <span style="color: #fea300">Africa</span> Accelerate
-            </h5>
-            <p>
-              We are a data analysis company based in Nairobi, Kenya. We
-              specialize in data science, business consultancy, academic and
-              market research, and web development. We are the missing piece
-              that will give your business that competitive edge.
-            </p>
-          </div>
-
-          <!-- Useful Links Section -->
-          <div class="col-lg-2 mb-4">
-            <h5 class="font-weight-bold">Useful Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="/index.html" class="text-white">Home</a></li>
-              <li><a href="/about.html" class="text-white">About Us</a></li>
-              <li>
-                <a href="./community.html" class="text-white">Community</a>
-              </li>
-              <li><a href="./blogs.html" class="text-white">Blogs</a></li>
-              <li><a href="/contact.html" class="text-white">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <!-- Services Section -->
-          <div class="col-lg-2 mb-4">
-            <h5 class="font-weight-bold">Our Services</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Data Science</a></li>
-              <li>
-                <a href="#" class="text-white">Academic And Market Research</a>
-              </li>
-              <li><a href="#" class="text-white">Business Consultancy</a></li>
-              <li><a href="#" class="text-white">Software Development</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="row">
-          <div class="col-lg-4">
-            <h5 class="font-weight-bold">Contact Us</h5>
-            <p>
-              <i class="fas fa-phone-alt" style="color: #fea300"></i
-              >&nbsp;+254746910922
-            </p>
-            <p>
-              <i class="fas fa-envelope" style="color: #fea300"></i
-              >&nbsp;sigmanalytics09@gmail.com
-            </p>
-            <p><i class="fas fa-globe mr-2"></i>&nbsp;www.sigma.io</p>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="text-center py-3">
-          <small
-            >©2024 Sigma
-            <span style="color: #fea300">Africa</span> Accelerate</small
-          >
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script>
-      document.querySelectorAll(".read-more").forEach((button) => {
-        button.addEventListener("click", () => {
-          const fullStory = button.previousElementSibling;
-          fullStory.style.display =
-            fullStory.style.display === "block" ? "none" : "block";
-          button.textContent =
-            button.textContent === "Read More" ? "Show Less" : "Read More";
-        });
+  <!-- Story Modals -->
+  <!-- Story 1 Modal -->
+  <div class="modal fade" id="story1Modal" tabindex="-1" aria-labelledby="story1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="story1ModalLabel">From <span style="color: #fea300;">Psychology</span> to <span
+              style="color: #fea300;">Software Engineering</span></h3>
+          <p class="text-muted small mt-2">Category: Career Transitions</p>
+          <button type="button" class="btn-close story-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/header/mwangi1.jpg" alt="Mwangi Brian's Story" class="img-fluid rounded mb-3"
+            style="max-height: 200px;">
+          <p>After years in psychology, Mwangi Brian transitioned into software engineering, driven by a desire to solve
+            real-world challenges through technology. His story is a testament to the power of embracing change and
+            leveraging diverse skills to thrive in tech.</p>
+          <p>Key milestones:</p>
+          <ul>
+            <li><strong>Curiosity:</strong> Discovered coding through online tutorials.</li>
+            <li><strong>Training:</strong> Joined Sigma Africa’s software development program.</li>
+            <li><strong>Community:</strong> Found mentorship and support in the Sigma community.</li>
+            <li><strong>Success:</strong> Built impactful applications for local businesses.</li>
+          </ul>
+          <div class="mt-3">
+            <strong>Share this story:</strong>
+            <ul class="list-inline mt-2">
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-linkedin"><i
+                    class="fab fa-linkedin fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-email"><i
+                    class="fas fa-envelope fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Story 2 Modal -->
+  <div class="modal fade" id="story2Modal" tabindex="-1" aria-labelledby="story2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="story2ModalLabel"><span style="color: #fea300;">Discovering</span> Data Science:
+            Aisha’s Journey</h3>
+          <p class="text-muted small mt-2">Category: Data Science</p>
+          <button type="button" class="btn-close story-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/header/data1.png" alt="Aisha's Story" class="img-fluid rounded mb-3"
+            style="max-height: 200px;">
+          <p>Aisha, a former teacher, found her calling in data science through Sigma Africa’s training programs. Her
+            journey highlights the accessibility of tech careers for non-traditional backgrounds.</p>
+          <p>Key steps:</p>
+          <ul>
+            <li><strong>Inspiration:</strong> Attended a Sigma Africa data science webinar.</li>
+            <li><strong>Learning:</strong> Mastered Python and data visualization.</li>
+            <li><strong>Projects:</strong> Built predictive models for local NGOs.</li>
+            <li><strong>Impact:</strong> Now mentors others in the community.</li>
+          </ul>
+          <div class="mt-3">
+            <strong>Share this story:</strong>
+            <ul class="list-inline mt-2">
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-linkedin"><i
+                    class="fab fa-linkedin fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-email"><i
+                    class="fas fa-envelope fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Story 3 Modal -->
+  <div class="modal fade" id="story3Modal" tabindex="-1" aria-labelledby="story3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header flex-column border-0">
+          <h3 class="modal-title" id="story3ModalLabel">Building <span style="color: #fea300;">Scalable</span>
+            Solutions: James’s Story</h3>
+          <p class="text-muted small mt-2">Category: Software Engineering</p>
+          <button type="button" class="btn-close story-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/header/software-development.jpg" alt="James's Story" class="img-fluid rounded mb-3"
+            style="max-height: 200px;">
+          <p>James, a self-taught coder, leveraged Sigma Africa’s community to become a software engineer, building
+            scalable solutions for startups.</p>
+          <p>Key achievements:</p>
+          <ul>
+            <li><strong>Self-Learning:</strong> Mastered JavaScript and Node.js.</li>
+            <li><strong>Collaboration:</strong> Contributed to open-source projects via Sigma.</li>
+            <li><strong>Innovation:</strong> Developed a startup’s core platform.</li>
+            <li><strong>Leadership:</strong> Now leads a dev team.</li>
+          </ul>
+          <div class="mt-3">
+            <strong>Share this story:</strong>
+            <ul class="list-inline mt-2">
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-linkedin"><i
+                    class="fab fa-linkedin fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none share-email"><i
+                    class="fas fa-envelope fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="py-5 text-white" style="background-color: #06659b;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Latest News</h5>
+          <p>Subscribe to get the latest news delivered to your inbox.</p>
+          <form class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Sigma <span style="color: #fea300;">Africa</span> Accelerate</h5>
+          <p>A Nairobi-based data analysis company specializing in data science, consultancy, research, and web
+            development.</p>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fw-bold">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="community.html" class="text-white text-decoration-none">Community</a></li>
+            <li><a href="blogs.html" class="text-white text-decoration-none">Blogs</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5 class="fw-bold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="datascience.html" class="text-white text-decoration-none">Data Science</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Academic & Market Research</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Business Consultancy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Software Development</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p><i class="fas fa-phone-alt me-2" style="color: #fea300;"></i> +254746910922</p>
+          <p><i class="fas fa-envelope me-2" style="color: #fea300;"></i> sigmanalytics09@gmail.com</p>
+          <p><i class="fas fa-globe me-2"></i> www.sigma.io</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <small>©2025 Sigma <span style="color: #fea300;">Africa</span> Accelerate</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    // Modal close functionality
+    document.querySelectorAll('.story-modal-close').forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) backdrop.remove();
+        document.querySelector('.stories').style.display = 'block';
       });
-    </script>
+    });
 
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+    // Focus management for modals
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('hidden.bs.modal', (event) => {
+        const triggerButton = document.querySelector(`[data-bs-target="#${modal.id}"]`);
+        if (triggerButton) triggerButton.focus();
+      });
+    });
+
+    // Category filter
+    document.querySelectorAll('.category-filter').forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        document.querySelectorAll('.story-card').forEach(card => {
+          card.style.display = category === 'all' || card.getAttribute('data-category') === category ? 'block' : 'none';
+        });
+        document.querySelectorAll('.category-filter').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+    // Search functionality
+    document.getElementById('storySearch').addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      document.querySelectorAll('.story-card').forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        const category = card.getAttribute('data-category').toLowerCase();
+        card.style.display = title.includes(searchTerm) || category.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+
+    // Share button functionality
+    document.querySelectorAll('.share-linkedin').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+      });
+    });
+    document.querySelectorAll('.share-twitter').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent(link.closest('.modal').querySelector('.modal-title').textContent);
+        window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+      });
+    });
+    document.querySelectorAll('.share-email').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const subject = encodeURIComponent(link.closest('.modal').querySelector('.modal-title').textContent);
+        const body = encodeURIComponent(`Check out this community story: ${window.location.href}`);
+        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      });
+    });
+  </script>
+</body>
+
 </html>
