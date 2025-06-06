@@ -142,59 +142,118 @@
 
   <!-- Testimonials Section -->
   <section class="testimonials py-5">
-    <div class="container">
-      <h2 class="display-6 fw-bold text-center mb-5">What <span style="color: #06659b;">They</span> Say</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm p-4 h-100">
-            <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b;"></i>
-            <h5 class="fw-bold">Positive Impact</h5>
-            <p>Your courses have positively impacted me. I finally solved the problem of developing dashboards using
-              PowerBI after advanced Excel classes.</p>
-            <div class="d-flex align-items-center mt-3">
-              <img src="./images/header/student.png" alt="Immculate Bwire" class="rounded-circle me-3"
-                style="width: 50px;">
-              <div>
-                <p class="fw-bold mb-0">Immculate Bwire</p>
-                <small class="text-muted">Alumni</small>
-              </div>
+            <div class="container">
+                <h2 class="display-6 fw-bold text-center mb-5">What <span style="color: #06659b">They</span> Say</h2>
+                <div class="row">
+                    <!-- Left Half (Video) -->
+                    <div class="col-md-6 p-0 pe-md-4">
+                        <video class="w-100 h-100 rounded-4" controls style="object-fit: cover">
+                            <source src="./images/testimonial1.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- Right Half (Testimonials Carousel) -->
+                    <div class="col-md-6 d-flex align-items-center ps-md-4">
+                        <div id="testimonialCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Testimonial 1 -->
+                                <div class="carousel-item active">
+                                    <div class="card shadow-sm p-4 h-100">
+                                        <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b"></i>
+                                        <h5 class="fw-bold">Positive Impact</h5>
+                                        <p>
+                                            Your courses have positively p me. I finally solved the problem of
+                                            developing dashboards using PowerBI after advanced Excel classes.
+                                        </p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img
+                                                src="./images/header/student.png"
+                                                alt="Nelly Kamau"
+                                                class="rounded-circle me-3"
+                                                style="width: 50px"
+                                            />
+                                            <div>
+                                                <p class="fw-bold mb-0">Nelly Kamau</p>
+                                                <small class="text-muted">Alumni</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 2 -->
+                                <div class="carousel-item">
+                                    <div class="card shadow-sm p-4 h-100">
+                                        <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b"></i>
+                                        <h5 class="fw-bold">Concepts Well Explained</h5>
+                                        <p>
+                                            Today's online class was amazing. Concepts were well explained, and the
+                                            instructor was patient with our problems.
+                                        </p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img
+                                                src="./images/header/student.png"
+                                                alt="Marion Jepchumba"
+                                                class="rounded-circle me-3"
+                                                style="width: 50px"
+                                            />
+                                            <div>
+                                                <p class="fw-bold mb-0">Marion Jepchumba</p>
+                                                <small class="text-muted">Alumni</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 3 -->
+                                <div class="carousel-item">
+                                    <div class="card shadow-sm p-4 h-100">
+                                        <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b"></i>
+                                        <h5 class="fw-bold">Topics Well Explained</h5>
+                                        <p>
+                                            The topics are well explained, and the pace is fine. Thank you, team
+                                            instructors.
+                                        </p>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img
+                                                src="./images/header/student.png"
+                                                alt="Peter Machira"
+                                                class="rounded-circle me-3"
+                                                style="width: 50px"
+                                            />
+                                            <div>
+                                                <p class="fw-bold mb-0">Peter Machira</p>
+                                                <small class="text-muted">Alumni</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#testimonialCarousel"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#testimonialCarousel"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm p-4 h-100">
-            <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b;"></i>
-            <h5 class="fw-bold">Concepts Well Explained</h5>
-            <p>Today's online class was amazing. Concepts were well explained, and the instructor was patient with our
-              problems.</p>
-            <div class="d-flex align-items-center mt-3">
-              <img src="./images/header/student.png" alt="Emilly Nyarenchi" class="rounded-circle me-3"
-                style="width: 50px;">
-              <div>
-                <p class="fw-bold mb-0">Emilly Nyarenchi</p>
-                <small class="text-muted">Alumni</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm p-4 h-100">
-            <i class="fas fa-quote-left fa-2x mb-3" style="color: #06659b;"></i>
-            <h5 class="fw-bold">Topics Well Explained</h5>
-            <p>The topics are well explained, and the pace is fine. Thank you, team instructors.</p>
-            <div class="d-flex align-items-center mt-3">
-              <img src="./images/header/student.png" alt="Mukui Mbindio" class="rounded-circle me-3"
-                style="width: 50px;">
-              <div>
-                <p class="fw-bold mb-0">Mukui Mbindio</p>
-                <small class="text-muted">Alumni</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
   <!-- Team Member Modals -->
   <!-- Makaka Bill -->

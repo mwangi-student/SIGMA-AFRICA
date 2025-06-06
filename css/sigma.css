@@ -1291,3 +1291,34 @@ a:hover {
     max-height: 150px;
   }
 }
+
+  #testimonialCarousel {
+    position: relative;
+  }
+
+  #testimonialCarousel .carousel-control-prev,
+  #testimonialCarousel .carousel-control-next {
+    width: auto;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+  }
+
+  #testimonialCarousel .carousel-control-prev {
+    left: -40px; /* move to the left outside the card */
+  }
+
+  #testimonialCarousel .carousel-control-next {
+    right: -40px; /* move to the right outside the card */
+  }
+
+  @media (max-width: 768px) {
+    #testimonialCarousel .carousel-control-prev {
+      left: -20px;
+    }
+
+    #testimonialCarousel .carousel-control-next {
+      right: -20px;
+    }
+  }
